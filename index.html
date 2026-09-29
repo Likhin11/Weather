@@ -4,23 +4,43 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weather App</title>
-    <link rel="stylesheet" href="style.css" >
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
+
     <header>
-        <h1>Weather wise</h1>
-        <h1>Download app</h1>
+        <h1>Weather Wise</h1>
+        <button id="download-btn">Download App</button>
     </header>
+
     <main>
-        <p id="status">status</p>
-        <p id="locat">location</p>
-        <p id="locat1">location</p>
-        <p id="temp">temperature</p>
+
+        <div class="search-box">
+            <input type="text" id="city-input" placeholder="Enter city">
+            <button id="getweather-btn">Search</button>
+        </div>
+
+        <div class="weather-info">
+            <p id="status">Search for a city</p>
+            <p id="locat">Location</p>
+            <p id="locat1">Country</p>
+            <p id="temp">--°C</p>
+            <p id="humidity">Humidity: --</p>
+            <p id="wind">Wind: --</p>
+        </div>
+
     </main>
+
     <section>
-        <h2>Recently searched</h2>
+        <h2>Recently Searched</h2>
+
+        <div id="recent-searches">
+            <!-- Recent cities will appear here -->
+        </div>
     </section>
-    
+
+    <script src="script.js"></script>
+
 </body>
-<script src="script.js"></script>
 </html>

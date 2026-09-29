@@ -1,29 +1,86 @@
-body{
-    font-family:Arial;
+body {
+    font-family: Arial, sans-serif;
     text-align: center;
     background-color: rgb(90, 142, 152);
-    margin: 0%;
-    padding: 10px;
+    margin: 0;
+    padding: 20px;
 }
-header{
-    display:flex;
-    justify-content: space-between;
 
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
 }
-main{
-    margin: 10px;
-    padding: 10px;
+
+header h1 {
+    margin: 0;
 }
-#temp{
-    font-size: xx-large;
-    font-style: italic;
-    color: #000;
+
+/* Main */
+main {
+    max-width: 600px;
+    margin: 30px auto;
+    padding: 20px;
 }
-#status,#locat,#locat1{
-    margin:10px;
-    margin-bottom: 10px;
+
+/* Search */
+.search-box {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+#city-input {
+    padding: 12px;
+    width: 60%;
+    border: none;
     border-radius: 10px;
-    padding: 5px;
+    font-size: 16px;
+}
+
+#getweather-btn,
+#download-btn {
+    padding: 12px 18px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: #b4eef1;
+}
+
+/* Weather information */
+.weather-info {
+    margin-top: 30px;
+}
+
+#status,
+#locat,
+#locat1,
+#humidity,
+#wind {
+    margin: 10px;
+    padding: 8px;
+    border-radius: 10px;
     color: #000;
     background-color: rgb(118, 152, 158);
+}
+
+#temp {
+    font-size: 50px;
+    font-weight: bold;
+    margin: 20px;
+}
+
+/* Recently searched */
+section {
+    max-width: 600px;
+    margin: auto;
+}
+
+#recent-searches {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
 }
